@@ -1,0 +1,32 @@
+name: depression_detection
+channels:
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - cuda-toolkit=12.8
+  - python=3.12.7
+  - pip
+  - tqdm
+  - gxx_linux-64=10
+  - pip:
+    - --index-url https://download.pytorch.org/whl/cu128
+    - --extra-index-url https://pypi.org/simple
+    - torch
+    - torchvision
+    - torchaudio
+    - torch_geometric
+    - numpy
+    - pandas
+    - matplotlib
+    - seaborn
+    - scikit-learn
+    - transformers
+    - gensim
+    - wordcloud
+    - shap
+    - jupyter
+    - openpyxl
+    - tensorflow
+    - umap-learn
+    - scipy
